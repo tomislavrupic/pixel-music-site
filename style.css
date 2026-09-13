@@ -24,3 +24,16 @@ h1,h2,h3,.brand{font-family:Space Grotesk,-apple-system,BlinkMacSystemFont,sans-
 @media(prefers-reduced-motion:reduce){.icon-orbit img,.icon-orbit:before{animation:none!important}}
 .motion-paused *:before{animation-play-state:paused!important}
 .studio-summary{display:flex;flex-direction:column;align-items:center;text-align:center;padding:50px 30px;background:radial-gradient(ellipse at center,#172d3d,#091619 75%);border:1px solid var(--line);border-radius:8px}.studio-summary img{filter:drop-shadow(0 0 30px #536fd040);animation:icon-float 6s ease-in-out infinite}.studio-summary h3{font-size:28px}.studio-summary span{font:11px ui-monospace,monospace;letter-spacing:.12em;color:var(--cyan)}@media(prefers-reduced-motion:reduce){.studio-summary img{animation:none!important}}
+/* Large app-icon hero, following the ALi Imagine product-page composition. */
+.hero{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);column-gap:64px;align-items:start;padding-top:76px}
+.hero>.eyebrow{grid-column:1;grid-row:1}.hero h1{grid-column:1;grid-row:2;font-size:clamp(52px,5.2vw,76px);margin:28px 0 30px;max-width:none}
+.hero>.intro{grid-column:1;grid-row:3;position:static;max-width:600px;margin-bottom:20px}.hero .intro p{font-size:18px}.hero .intro .button{max-width:350px}
+.hero-icon{grid-column:2;grid-row:1 / span 3;align-self:center;position:relative;min-width:0;padding:20px 0 35px;text-align:center}
+.hero-icon .icon-orbit{display:block;float:none;width:100%;margin:0;perspective:1000px}.hero-icon .icon-orbit img{width:100%;height:auto;max-width:590px;animation:hero-icon-float 7s ease-in-out infinite;filter:drop-shadow(0 15px 35px #22467e45)}
+.hero-icon .icon-orbit:before{inset:15%;filter:blur(55px);background:linear-gradient(135deg,#53c3dc,#735ce8);opacity:.24}.icon-label{position:relative;display:block;margin-top:12px;color:var(--cyan);font:10px ui-monospace,monospace;letter-spacing:.22em}
+.hero>.signal-deck{grid-column:1 / -1;margin-top:32px}.hero>.specs{grid-column:1 / -1}
+@keyframes hero-icon-float{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-12px) rotate(2deg)}}
+@media(max-width:1100px){.hero{column-gap:30px}.hero h1{font-size:clamp(42px,5.6vw,62px)}.hero .intro p{font-size:16px}.hero-icon{align-self:center}.hero .intro:after{display:none}}
+@media(max-width:700px){.hero{grid-template-columns:minmax(0,1fr);padding-top:40px}.hero h1{font-size:clamp(39px,10.3vw,66px)}.hero-icon{grid-column:1;grid-row:3;width:min(100%,340px);justify-self:center;padding:8px 10px 25px}.hero>.intro{grid-row:4}.hero .intro p{font-size:17px}.hero>.signal-deck{grid-row:5}.hero>.specs{grid-row:6}.hero-icon .icon-orbit img{max-width:340px}.hero .intro .button{max-width:none}}
+@media(prefers-reduced-motion:reduce){.hero-icon .icon-orbit img{animation:none!important}}
+.hero-icon .icon-orbit img{border-radius:22%}
