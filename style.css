@@ -74,3 +74,19 @@ h1,h2,h3,.brand{font-family:Space Grotesk,-apple-system,BlinkMacSystemFont,sans-
 .art-grid figcaption span{display:block}
 .studio-banner{padding-bottom:40px}
 @media(max-width:700px){.campaign-banner{padding-bottom:35px}.art-grid{grid-template-columns:1fr;gap:20px}.sound-art{padding-top:35px}.maker-link{font-size:11px}.campaign-banner .caption{line-height:1.7}.studio-banner{padding-bottom:25px}}
+
+/* Lightweight native audio previews: user-initiated playback only. */
+.listen-section{padding:65px 0 30px;border-top:1px solid var(--line)}
+.listen-section h2{margin-bottom:24px}
+.listen-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.listen-card{padding:24px;border:1px solid var(--line);background:#0b171c;min-width:0}
+.listen-card-heading{display:flex;align-items:center;gap:18px;margin-bottom:22px}
+.listen-card-heading img{width:88px;height:88px;object-fit:cover;border:1px solid var(--line);flex-shrink:0}
+.listen-model{font:10px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.07em;color:var(--cyan)}
+.listen-card h3{margin:6px 0;font-size:23px}
+.listen-card-heading p{margin:0;font-size:12px;color:var(--muted)}
+.listen-card audio{display:block;width:100%;height:42px;accent-color:var(--cyan);color-scheme:dark}
+.audio-download{display:inline-block;margin-top:12px;color:var(--muted);font:11px ui-monospace,SFMono-Regular,Menlo,monospace}
+.audio-error{font-size:13px;color:#e0b57d;margin:14px 0 0}
+@media(max-width:700px){.listen-section{padding-top:40px}.listen-grid{grid-template-columns:1fr;gap:16px}.listen-card{padding:18px}.listen-card-heading{gap:14px}.listen-card-heading img{width:72px;height:72px}.listen-card h3{font-size:21px}}
+@media(max-width:480px){nav a.listen-link{display:block}}
