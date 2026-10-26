@@ -57,3 +57,20 @@ h1,h2,h3,.brand{font-family:Space Grotesk,-apple-system,BlinkMacSystemFont,sans-
 .sound-library .shot,.showcase .shot{border-radius:2px}
 .sound-library .shot:hover,.showcase .shot:hover{transform:none}
 @media(max-width:700px){.waveform-hero{width:min(100%,440px);padding:8px 0 22px}.sound-library{padding-top:36px}.detail-art .caption{font-size:11px}}
+
+/* Original campaign artwork and explicit links to the creator's website. */
+.maker-link{display:inline-block;margin:0 0 14px;color:var(--cyan);font:12px ui-monospace,SFMono-Regular,Menlo,monospace;text-decoration:none}
+.maker-link:hover,.campaign-banner .caption a:hover,.sound-art a:hover{color:#c9f2f7}
+.campaign-banner{padding:0 0 60px}
+.art-link{display:block;border:1px solid var(--line);overflow:hidden}
+.art-link img{display:block;width:100%;height:auto}
+.art-link:hover{border-color:var(--cyan)}
+.campaign-banner .caption{font-size:12px}
+.sound-art{padding:50px 0 20px;border-top:1px solid var(--line)}
+.art-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.art-grid figure{margin:0;min-width:0}
+.art-grid figcaption{padding:15px 0;color:var(--muted);font:12px ui-monospace,SFMono-Regular,Menlo,monospace;line-height:1.8}
+.art-grid figcaption strong{display:block;color:var(--ink);font-weight:500;font-size:16px}
+.art-grid figcaption span{display:block}
+.studio-banner{padding-bottom:40px}
+@media(max-width:700px){.campaign-banner{padding-bottom:35px}.art-grid{grid-template-columns:1fr;gap:20px}.sound-art{padding-top:35px}.maker-link{font-size:11px}.campaign-banner .caption{line-height:1.7}.studio-banner{padding-bottom:25px}}
