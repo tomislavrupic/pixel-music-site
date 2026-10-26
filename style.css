@@ -42,3 +42,18 @@ h1,h2,h3,.brand{font-family:Space Grotesk,-apple-system,BlinkMacSystemFont,sans-
 .hero-icon .icon-orbit:after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:22%;background:linear-gradient(115deg,transparent 38%,#53c3dc08 44%,#a5efff30 49%,#ab8eff18 52%,transparent 60%);background-size:300% 100%;mix-blend-mode:screen;animation:icon-light-sweep 7s ease-in-out infinite}
 @keyframes icon-light-sweep{0%,15%{background-position:100% 0;opacity:0}25%{opacity:1}70%{opacity:1}85%,100%{background-position:0% 0;opacity:0}}
 @media(prefers-reduced-motion:reduce){.hero-icon .icon-orbit:after{animation:none!important;opacity:0}}
+
+/* 0.4.6 visual refresh: original artwork, native screenshots, unchanged downloads. */
+.waveform-hero{padding:0 0 22px;align-self:center}
+.hero-icon.waveform-hero .icon-orbit img{border-radius:2px;filter:none;border:1px solid #31464d;display:block}
+.hero-icon.waveform-hero .icon-orbit:before,.hero-icon.waveform-hero .icon-orbit:after{display:none}
+.waveform-hero .icon-label{margin-top:16px}
+.detail-art{margin:0;min-width:0}
+.detail-art img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.detail-art .caption{margin-bottom:0}
+.sound-library{padding:50px 0 20px;border-top:1px solid var(--line)}
+.sound-library h2{margin-bottom:24px}
+.section-intro{color:var(--muted);max-width:740px;margin-bottom:32px}
+.sound-library .shot,.showcase .shot{border-radius:2px}
+.sound-library .shot:hover,.showcase .shot:hover{transform:none}
+@media(max-width:700px){.waveform-hero{width:min(100%,440px);padding:8px 0 22px}.sound-library{padding-top:36px}.detail-art .caption{font-size:11px}}
