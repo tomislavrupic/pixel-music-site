@@ -97,3 +97,6 @@ h1,h2,h3,.brand{font-family:Space Grotesk,-apple-system,BlinkMacSystemFont,sans-
 .demo-lyrics summary{cursor:pointer;color:var(--cyan)}
 .demo-lyrics pre{font-family:inherit;font-size:13px;line-height:1.8;white-space:pre-wrap;overflow-wrap:anywhere;margin:14px 0 0}
 @media(max-width:700px){.listen-description{min-height:0}}
+
+/* The artist-selected full song leads the demo collection. */
+.listen-card.featured-demo{grid-column:1 / -1;border-color:var(--cyan)}
