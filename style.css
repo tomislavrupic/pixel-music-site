@@ -90,3 +90,10 @@ h1,h2,h3,.brand{font-family:Space Grotesk,-apple-system,BlinkMacSystemFont,sans-
 .audio-error{font-size:13px;color:#e0b57d;margin:14px 0 0}
 @media(max-width:700px){.listen-section{padding-top:40px}.listen-grid{grid-template-columns:1fr;gap:16px}.listen-card{padding:18px}.listen-card-heading{gap:14px}.listen-card-heading img{width:72px;height:72px}.listen-card h3{font-size:21px}}
 @media(max-width:480px){nav a.listen-link{display:block}}
+
+/* Fresh musical directions, retaining the same native player. */
+.listen-description{min-height:48px;margin:0 0 18px;color:var(--muted);font-size:14px;line-height:1.6}
+.demo-lyrics{margin-top:16px;border-top:1px solid var(--line);padding-top:12px;font-size:12px;color:var(--muted)}
+.demo-lyrics summary{cursor:pointer;color:var(--cyan)}
+.demo-lyrics pre{font-family:inherit;font-size:13px;line-height:1.8;white-space:pre-wrap;overflow-wrap:anywhere;margin:14px 0 0}
+@media(max-width:700px){.listen-description{min-height:0}}
